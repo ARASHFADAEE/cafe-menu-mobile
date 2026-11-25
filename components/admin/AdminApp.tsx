@@ -4,6 +4,7 @@ import { FormEvent, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useStore } from '@/lib/store';
 import type { Banner, Category, Product } from '@/lib/types';
+import ImageUploadField from '@/components/admin/ImageUploadField';
 
 type Tab = 'products' | 'categories' | 'banners' | 'cafe';
 
@@ -383,13 +384,13 @@ export default function AdminApp() {
                 onChange={(e) => setEditingProduct({ ...editingProduct, tag: e.target.value })}
               />
             </label>
-            <label>
-              آدرس تصویر
-              <input
-                value={editingProduct.image}
-                onChange={(e) => setEditingProduct({ ...editingProduct, image: e.target.value })}
-              />
-            </label>
+            <ImageUploadField
+              label="تصویر محصول"
+              value={editingProduct.image}
+              maxWidth={900}
+              quality={0.8}
+              onChange={(image) => setEditingProduct({ ...editingProduct, image })}
+            />
             <label className="admin-check">
               <input
                 type="checkbox"
@@ -496,13 +497,14 @@ export default function AdminApp() {
                 onChange={(e) => setEditingBanner({ ...editingBanner, ctaLabel: e.target.value })}
               />
             </label>
-            <label>
-              تصویر بنر (مسیر یا URL)
-              <input
-                value={editingBanner.image}
-                onChange={(e) => setEditingBanner({ ...editingBanner, image: e.target.value })}
-              />
-            </label>
+            <ImageUploadField
+              label="تصویر بنر هیرو"
+              value={editingBanner.image}
+              maxWidth={1400}
+              quality={0.84}
+              hint="تصویر عریض پیشنهاد می‌شود. آپلود از دستگاه یا وارد کردن لینک"
+              onChange={(image) => setEditingBanner({ ...editingBanner, image })}
+            />
             <label className="admin-check">
               <input
                 type="checkbox"
