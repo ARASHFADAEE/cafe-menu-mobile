@@ -859,6 +859,23 @@
     color: var(--color-lilac);
   }
 
+  .footer-credit {
+    margin: 14px 0 0 !important;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    color: var(--color-muted) !important;
+  }
+
+  .footer-credit a {
+    color: var(--color-lilac);
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .footer-credit a:active {
+    opacity: 0.85;
+  }
+
   /* ——— Info drawer ——— */
   .info-drawer {
     position: fixed;

@@ -340,6 +340,12 @@ export default function MenuApp() {
               <a href="#visit">لوکیشن</a>
               <Link href="/admin">پنل ادمین</Link>
             </div>
+            <p className="footer-credit">
+              طراحی و توسعه و پشتیبانی با{' '}
+              <a href="https://minocode.online/" target="_blank" rel="noopener noreferrer">
+                مینوکد
+              </a>
+            </p>
           </footer>
         </section>
       </main>

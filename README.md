@@ -11,8 +11,6 @@ npm run dev
 
 - منوی عمومی: [http://localhost:3000](http://localhost:3000)
 - پنل ادمین: [http://localhost:3000/admin](http://localhost:3000/admin)
-- رمز ادمین پیش‌فرض: `estila2024`
-
 ## امکانات ادمین
 - مدیریت محصولات (افزودن / ویرایش / حذف / فعال‌سازی)
 - مدیریت دسته‌بندی‌ها

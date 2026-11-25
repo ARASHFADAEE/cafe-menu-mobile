@@ -90,7 +90,6 @@ export default function AdminApp() {
           <button type="submit" className="admin-primary">
             ورود
           </button>
-          <p className="admin-hint">رمز پیش‌فرض: estila2024</p>
           <Link href="/" className="admin-link">
             ← بازگشت به منو
           </Link>
